@@ -70,7 +70,7 @@ CREATE POLICY "public delete helfer"      ON helfer      FOR DELETE USING (true)
 -- ────────────────────────────────────────────────────────────────
 --  Vorbelegte Aufgaben (Dienste)
 -- ────────────────────────────────────────────────────────────────
-INSERT INTO aufgaben (titel, max_helfer) VALUES
-    ('Aufbau', 3),
-    ('Abbau', 3),
-    ('Kuchenverkauf', 2);
+INSERT INTO aufgaben (titel, beschreibung, max_helfer) VALUES
+    ('Aufbau', 'Beginn: 09:45 Uhr', 3),
+    ('Abbau', 'Beginn abhängig vom Ende des Gottesdienstes', 3),
+    ('Kuchenverkauf', 'Beginn abhängig vom Ende des Gottesdienstes', 2);
